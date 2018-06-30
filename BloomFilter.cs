@@ -75,7 +75,7 @@ namespace Bloom
             return Math.Pow(1 - Math.Pow(1 - 1.0 / capacity, 1.0 * K * size), 1.0 * K);
         }
 
-          private async Task<int[]> GetHashIndices(string key)
+        private async Task<int[]> GetHashIndices(string key)
         {
             int[] hashIndices = new int[K];
             for (int k = 0; k < K; k++)
